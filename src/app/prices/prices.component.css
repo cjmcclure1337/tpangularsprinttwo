@@ -22,3 +22,7 @@ td.mat-cell {
 td.mat-cell:first-of-type {
     padding-left: 24px;
 }
+
+table.mat-table{
+    margin: auto;
+}
