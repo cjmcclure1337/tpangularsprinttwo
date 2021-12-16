@@ -1,0 +1,23 @@
+<div id="appComponent" [ngClass]="{dark: darkMode}">
+  <a routerLink="/prices">Market Prices</a> |
+  <a routerLink="/portfolio">My Portfolio</a> |
+  <a routerLink="/">Home</a>
+  <mat-slide-toggle [(ngModel)]="darkMode" (checked)="darkMode" (change)="setTheme()">Theme</mat-slide-toggle>
+  <div *ngIf="showWelcome">
+    <h2 class="welcome">WELCOME to our stock market simulator!</h2>
+      <div id=welcome [ngClass]="{dark: darkMode}">
+        <mat-card class="optionCard">
+          <mat-card-title>Prices</mat-card-title>
+          <mat-card-content>Go here to check/update stock prices, and buy stock</mat-card-content>
+          <mat-card-actions><button mat-button routerLink="/prices">Go to prices</button></mat-card-actions>
+        </mat-card>
+        <mat-card class="optionCard">
+          <mat-card-title>Portfolio</mat-card-title>
+          <mat-card-content>Go here to view, update, or sell your puchased assets.</mat-card-content>
+          <mat-card-actions><button mat-button routerLink="/portfolio">Go to my portfolio</button></mat-card-actions>
+        </mat-card>
+      </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

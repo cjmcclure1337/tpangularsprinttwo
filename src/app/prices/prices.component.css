@@ -1,0 +1,24 @@
+h1 {
+    margin: 12px;
+}
+
+p {
+    margin: 12px;
+}
+
+table {
+    border-spacing: 0;
+    margin: 12px;
+}
+
+td.mat-cell {
+    padding: 12px;
+}
+
+.update {
+    margin-left: 12px
+}
+
+td.mat-cell:first-of-type {
+    padding-left: 24px;
+}
